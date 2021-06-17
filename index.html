@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
-    <h1>Hi</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, doloribus!</p>
-    <script src="./index.js"></script>
+    <main> 
+        <div class="form">
+            <div class="title">Questionnaire</div>
+            <form action="#">
+                    <div class="gender">
+                    <label>Gender : </label>
+                        <input type="radio" name="gender" value="1">Mele 
+                        <input type="radio" name="gender" value="2">Female 
+                        <input type="radio" name="gender" value="0">Other 
+                    </div>
+                    <div class="brandLabtop">
+                        <label>Which laptop brand do you like? </label>
+                        <select name="brand" id="labtop" class="choice">
+                        <option value="asus">Asus</option>
+                        <option value="msi">MSI</option>
+                        <option value="hp">HP</option>
+                        <option value="dell">Dell</option>
+                        <option value="lenovo">Lenovo</option>
+                        <option value="acer">Acer</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="apple">Apple</option>
+                        <option value="other">Other</option>
+                        </select>   
+                    </div>
+                    <div class="reasons">
+                        <label>Why do you like this brand of laptops?</label>
+                        <input type="text" name="reason" class="reason" placeholder="Why do you like this brand of laptops?">
+                    </div>
+                    <div class="btn">
+                       <button  type="submit">Summit</button> 
+                    </div>
+                    
+            </form>
+        </div>        
+    </main>
+    
+    <script type="text/javascript" src="src/index.js"></script>
 </body>
 </html>
